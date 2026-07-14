@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>r1cky — CS2 profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay"></div>
+
+<div class="layout">
+
+  <aside class="rail">
+    <p class="rail-eyebrow">Linked accounts</p>
+
+    <a class="faceit-link" href="https://www.faceit.com/en/players/r1cky" target="_blank" rel="noopener">
+      <!-- MIEJSCE NA TWOJE LOGO (Zastąp "faceit-logo.png" swoim plikiem) -->
+      <span class="faceit-badge" style="transform: none; background: transparent;">
+        <img src="channels4_profile.jpg" alt="Faceit" style="width: 100%; height: 100%; object-fit: contain;">
+      </span>
+      
+      <!-- STARY ROMB (Gdybyś chciał do niego wrócić, usuń powyższy <span> i odkomentuj ten poniżej):
+      <span class="faceit-badge">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" fill="#0a0c0f"/></svg>
+      </span>
+      -->
+
+      <span class="faceit-text">
+        <span class="faceit-label">Faceit</span>
+        <span class="faceit-nick">r1cky <span class="faceit-arrow">&#8599;</span></span>
+      </span>
+    </a>
+
+    <div class="rail-divider"></div>
+
+    <div class="rail-meta">
+      <div><span>Level</span><span>-</span></div>
+      <div><span>Premier</span><span>417 wins</span></div>
+      <div><span>Wingman</span><span>306 wins</span></div>
+       <div><span>CS GO </span><span>1036 wins</span></div>
+      <div><span>Region</span><span>PL</span></div>
+    </div>
+
+    <div class="rail-footer"><span class="dot"></span>Profile active</div>
+  </aside>
+
+  <main>
+
+    <div class="avatar-wrap">
+      <div class="bracket tl"></div>
+      <div class="bracket tr"></div>
+      <div class="bracket bl"></div>
+      <div class="bracket br"></div>
+      
+      <!-- MIEJSCE NA TWOJE ZDJĘCIE PROFILOWE (Zastąp "avatar.jpg" swoim plikiem) -->
+      <div class="avatar-circle">
+        <img src="60e7da880fe7505b87445273a3d23e1bf6b371d4_full.jpg" alt="Avatar" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <!-- STARY CELOWNIK Z NAPISEM "R1" (Gdybyś chciał do niego wrócić, usuń powyższy <div class="avatar-circle"> i odkomentuj ten poniżej):
+      <div class="avatar-circle">
+        <svg viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="47" stroke="#ff5a1f" stroke-width="1.2" opacity="0.5"/>
+          <line x1="50" y1="6" x2="50" y2="20" stroke="#ff5a1f" stroke-width="2"/>
+          <line x1="50" y1="80" x2="50" y2="94" stroke="#ff5a1f" stroke-width="2"/>
+          <line x1="6" y1="50" x2="20" y2="50" stroke="#ff5a1f" stroke-width="2"/>
+          <line x1="80" y1="50" x2="94" y2="50" stroke="#ff5a1f" stroke-width="2"/>
+          <circle cx="50" cy="50" r="4" fill="#ff5a1f"/>
+          <text x="50" y="46" text-anchor="middle" font-family="Teko" font-size="30" font-weight="600" fill="#e7e4dc">R1</text>
+        </svg>
+      </div>
+      -->
+    </div>
+
+    <h1 class="nickname">r1cky</h1>
+    <p class="tagline">CS2<span class="sep">/</span>5v5 Premier<span class="sep">/</span>Rifler</p>
+
+    <section class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-label">K/D ratio</div>
+        <div class="stat-value" id="val-kd">1.01</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">HLTV rating</div>
+        <div class="stat-value accent" id="val-rating">1.09</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Win rate</div>
+        <div class="stat-value" id="val-winrate">50%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Headshot %</div>
+        <div class="stat-value" id="val-hs">43%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">ADR</div>
+        <div class="stat-value" id="val-adr">79</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">1vX clutch</div>
+        <div class="stat-value blue" id="val-clutch">17%</div>
+      </div>
+    </section>
+
+    <div class="readout">
+      <div class="readout-item">
+        <div class="readout-label">Kills</div>
+        <div class="readout-value" id="val-kills">12,898</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Deaths</div>
+        <div class="readout-value" id="val-deaths">12,754</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Assists</div>
+        <div class="readout-value" id="val-assists">3,463</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Matches</div>
+        <div class="readout-value" id="val-matches">828</div>
+      </div>
+    </div>
+
+    <div class="section-title"><span>Premier &mdash; season Elo</span><div class="rule"></div></div>
+    <div class="rank-strip">
+      <div class="rank-cell"><div class="season">S1</div><div class="elo">11,067</div></div>
+      <div class="rank-cell"><div class="season">S2</div><div class="elo">5,644</div></div>
+      <div class="rank-cell"><div class="season">S3</div><div class="elo">16,115</div></div>
+      <div class="rank-cell"><div class="season">S4</div><div class="elo">22,556</div></div>
+      <div class="rank-cell"><div class="season">S5</div><div class="elo na">&mdash;</div></div>
+    </div>
+
+    <div class="section-title"><span>Most played maps</span><div class="rule"></div></div>
+    <div class="map-list" id="mapList">
+      <div class="map-row" data-pct="53">
+        <div class="map-name">de_mirage</div>
+        <div class="map-bar-track"><div class="map-bar-fill"></div></div>
+        <div class="map-pct">53%</div>
+      </div>
+      <div class="map-row" data-pct="53">
+        <div class="map-name">de_ancient</div>
+        <div class="map-bar-track"><div class="map-bar-fill"></div></div>
+        <div class="map-pct">53%</div>
+      </div>
+      <div class="map-row" data-pct="53">
+        <div class="map-name">de_nuke</div>
+        <div class="map-bar-track"><div class="map-bar-fill"></div></div>
+        <div class="map-pct">53%</div>
+      </div>
+      <div class="map-row" data-pct="55">
+        <div class="map-name">de_dust2</div>
+        <div class="map-bar-track"><div class="map-bar-fill"></div></div>
+        <div class="map-pct">55%</div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <span>Stats &middot; Faceit / CS2</span>
+      <span>Updated Jul 2026</span>
+    </footer>
+
+  </main>
+</div>
+
+<div class="player-bar">
+  <button id="playToggle" class="play-btn" aria-label="Odtwórz / pauza">
+    <svg id="iconPlay" viewBox="0 0 24 24" width="16" height="16"><path d="M6 4l14 8-14 8V4z" fill="currentColor"/></svg>
+    <svg id="iconPause" viewBox="0 0 24 24" width="16" height="16" style="display:none;"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"/></svg>
+  </button>
+  <span class="player-label">Muzyka w tle</span>
+  <svg viewBox="0 0 24 24" width="16" height="16" class="vol-icon"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/></svg>
+  <input type="range" id="volumeSlider" min="0" max="100" value="30" class="volume-slider">
+  <span id="volumeValue" class="player-label">30%</span>
+</div>
+
+<audio id="bgAudio" src="ence.mp3" loop preload="auto"></audio>
+
+<script>
+  // Adres Twojego lokalnego serwera proxy pobierającego dane z csstats.gg
+  const PROXY_URL = 'http://localhost:3000/api/stats';
+
+  // Funkcja odpowiadająca za aktualizację i animację pasków procentowych map
+  function updateMapBars() {
+    document.querySelectorAll('.map-row').forEach(function(row){
+      var pct = row.getAttribute('data-pct');
+      var fill = row.querySelector('.map-bar-fill');
+      requestAnimationFrame(function(){
+        fill.style.width = pct + '%';
+      });
+    });
+  }
+
+  // Funkcja pobierająca aktualne dane z serwera proxy i podmieniająca wartości w HTML
+  async function fetchLiveStats() {
+    try {
+      const response = await fetch(PROXY_URL);
+      if (!response.ok) throw new Error('Błąd połączenia z serwerem proxy');
+      
+      const data = await response.json();
+
+      // Podmiana wartości głównych statystyk
+      document.getElementById('val-kd').textContent = data.kd;
+      document.getElementById('val-rating').textContent = data.rating;
+      document.getElementById('val-winrate').textContent = data.winRate;
+      document.getElementById('val-hs').textContent = data.hs;
+      document.getElementById('val-adr').textContent = data.adr;
+      document.getElementById('val-clutch').textContent = data.clutch;
+      
+      // Podmiana szczegółowych liczb (Kills, Deaths, itp.)
+      document.getElementById('val-kills').textContent = data.kills;
+      document.getElementById('val-deaths').textContent = data.deaths;
+      document.getElementById('val-assists').textContent = data.assists;
+      document.getElementById('val-matches').textContent = data.matches;
+
+      // Aktualizacja wartości i pasków dla map (jeśli serwer proxy je przekazuje)
+      if (data.maps && data.maps.length > 0) {
+        const mapRows = document.querySelectorAll('.map-row');
+        data.maps.forEach((mapData, index) => {
+          if (mapRows[index]) {
+            mapRows[index].setAttribute('data-pct', mapData.pct);
+            mapRows[index].querySelector('.map-pct').textContent = mapData.pct + '%';
+          }
+        });
+      }
+
+      // Wywołanie animacji pasków po załadowaniu nowych danych
+      updateMapBars();
+      
+      // Aktualizacja godziny pobrania danych w stopce
+      const now = new Date();
+      document.querySelector('.page-footer span:last-child').textContent = 
+        `Updated: ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+
+    } catch (error) {
+      console.warn('Nie udało się pobrać aktualnych statystyk. Ładuję dane domyślne.', error);
+      // Nawet jeśli pobieranie się nie uda, animujemy domyślne paski
+      updateMapBars();
+    }
+  }
+
+  // Uruchomienie skryptu po załadowaniu dokumentu
+  document.addEventListener('DOMContentLoaded', () => {
+    fetchLiveStats();
+    
+    // Automatyczne odświeżanie statystyk w tle co 5 minut (300 000 ms)
+    setInterval(fetchLiveStats, 300000);
+  });
+</script>
+
+<script>
+  // Skrypt odtwarzacza muzyki w tle
+  var audio = document.getElementById('bgAudio');
+  var isPlaying = false;
+
+  var playToggle = document.getElementById('playToggle');
+  var iconPlay = document.getElementById('iconPlay');
+  var iconPause = document.getElementById('iconPause');
+  var volumeSlider = document.getElementById('volumeSlider');
+  var volumeValue = document.getElementById('volumeValue');
+
+  audio.volume = volumeSlider.value / 100;
+
+  playToggle.addEventListener('click', function(){
+    if (isPlaying) {
+      audio.pause();
+      iconPlay.style.display = '';
+      iconPause.style.display = 'none';
+    } else {
+      audio.play();
+      iconPlay.style.display = 'none';
+      iconPause.style.display = '';
+    }
+    isPlaying = !isPlaying;
+  });
+
+  volumeSlider.addEventListener('input', function(){
+    var v = volumeSlider.value;
+    volumeValue.textContent = v + '%';
+    audio.volume = v / 100;
+  });
+</script>
+
+</body>
+</html>
